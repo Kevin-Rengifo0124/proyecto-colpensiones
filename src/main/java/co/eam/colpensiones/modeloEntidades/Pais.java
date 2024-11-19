@@ -1,4 +1,4 @@
-package co.eam.colpensiones.modelo;
+package co.eam.colpensiones.modeloEntidades;
 
 public class Pais {
 

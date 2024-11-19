@@ -1,6 +1,6 @@
 package co.eam.colpensiones.repositorio.csv;
 
-import co.eam.colpensiones.modelo.Caracterizacion;
+import co.eam.colpensiones.modeloEntidades.Caracterizacion;
 
 import java.io.IOException;
 

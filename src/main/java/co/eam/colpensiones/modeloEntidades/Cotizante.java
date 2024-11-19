@@ -1,31 +1,27 @@
-package co.eam.colpensiones.modelo;
+package co.eam.colpensiones.modeloEntidades;
+
+import co.eam.colpensiones.modeloEnums.TipoDocumento;
 
 public class Cotizante {
     private Integer idCotizante;
-    private Integer idCaracterizacion;
-    private String tipoDocumento;
+    private TipoDocumento tipoDocumento;
     private String numeroDocumento;
     private String nombreCompleto;
-    private int edad;
-    private String caracterizacion;
+    private Caracterizacion caracterizacion;
 
     public Cotizante() {
         this.idCotizante = null;
-        this.idCaracterizacion = null;
         this.tipoDocumento = null;
         this.numeroDocumento = null;
         this.nombreCompleto = null;
-        this.edad = 0;
         this.caracterizacion = null;
     }
 
-    public Cotizante(Integer idCotizante, Integer idCaracterizacion, String tipoDocumento, String numeroDocumento, String nombreCompleto, int edad, String caracterizacion) {
+    public Cotizante(Integer idCotizante, TipoDocumento tipoDocumento, String numeroDocumento, String nombreCompleto, Caracterizacion caracterizacion) {
         this.idCotizante = idCotizante;
-        this.idCaracterizacion = idCaracterizacion;
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
         this.nombreCompleto = nombreCompleto;
-        this.edad = edad;
         this.caracterizacion = caracterizacion;
     }
 
@@ -37,19 +33,11 @@ public class Cotizante {
         this.idCotizante = idCotizante;
     }
 
-    public Integer getIdCaracterizacion() {
-        return idCaracterizacion;
-    }
-
-    public void setIdCaracterizacion(Integer idCaracterizacion) {
-        this.idCaracterizacion = idCaracterizacion;
-    }
-
-    public String getTipoDocumento() {
+    public TipoDocumento getTipoDocumento() {
         return tipoDocumento;
     }
 
-    public void setTipoDocumento(String tipoDocumento) {
+    public void setTipoDocumento(TipoDocumento tipoDocumento) {
         this.tipoDocumento = tipoDocumento;
     }
 
@@ -69,19 +57,11 @@ public class Cotizante {
         this.nombreCompleto = nombreCompleto;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getCaracterizacion() {
+    public Caracterizacion getCaracterizacion() {
         return caracterizacion;
     }
 
-    public void setCaracterizacion(String caracterizacion) {
+    public void setCaracterizacion(Caracterizacion caracterizacion) {
         this.caracterizacion = caracterizacion;
     }
 
@@ -89,12 +69,10 @@ public class Cotizante {
     public String toString() {
         return "Cotizante{" +
                 "idCotizante=" + idCotizante +
-                ", idCaracterizacion=" + idCaracterizacion +
-                ", tipoDocumento='" + tipoDocumento + '\'' +
+                ", tipoDocumento=" + tipoDocumento +
                 ", numeroDocumento='" + numeroDocumento + '\'' +
                 ", nombreCompleto='" + nombreCompleto + '\'' +
-                ", edad=" + edad +
-                ", caracterizacion='" + caracterizacion + '\'' +
+                ", caracterizacion=" + caracterizacion +
                 '}';
     }
 }

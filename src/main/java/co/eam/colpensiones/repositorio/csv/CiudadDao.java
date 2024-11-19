@@ -1,6 +1,6 @@
 package co.eam.colpensiones.repositorio.csv;
 
-import co.eam.colpensiones.modelo.Ciudad;
+import co.eam.colpensiones.modeloEntidades.Ciudad;
 
 import java.io.IOException;
 
