@@ -1,8 +1,10 @@
 package co.eam.colpensiones.repositorio.csv;
 
-import java.util.List;
+import java.util.LinkedList;
 
 public interface InterfaceDao<ClaseEntidad, TipoId> {
 
-    public List<ClaseEntidad> obtenerTodosLosDatos();
+    LinkedList<ClaseEntidad> obtenerTodosLosDatos();
+
+    void modificarEstadoSolicitud(int fila, int columna, String estado);
 }

@@ -1,28 +1,30 @@
 package co.eam.colpensiones.util;
 
-public class Nodo<T> {
-    private T dato;
-    private Nodo<T> nodoSiguiente;
+import java.io.Serializable;
 
-    public Nodo(T dato) {
-        this.dato = dato;
-        nodoSiguiente = null;
-    }
+public class Nodo<T> implements Serializable {
 
-    public T getDato() {
-        return dato;
-    }
+  private T dato;
+  private Nodo<T> nodoSiguiente;
 
-    public void setDato(T dato) {
-        this.dato = dato;
-    }
+  public Nodo(T dato) {
+    this.dato = dato;
+    nodoSiguiente = null;
+  }
 
-    public Nodo<T> getNodoSiguiente() {
-        return nodoSiguiente;
-    }
+  public T getDato() {
+    return dato;
+  }
 
-    public void setNodoSiguiente(Nodo<T> nodoSiguiente) {
-        this.nodoSiguiente = nodoSiguiente;
-    }
+  public void setDato(T dato) {
+    this.dato = dato;
+  }
 
+  public Nodo<T> getNodoSiguiente() {
+    return nodoSiguiente;
+  }
+
+  public void setNodoSiguiente(Nodo<T> nodoSiguiente) {
+    this.nodoSiguiente = nodoSiguiente;
+  }
 }
